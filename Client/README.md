@@ -15,7 +15,7 @@ First, create the environment variables file `.env` in the client folder. The `.
 4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 #DEMO CREDENTIALS
-Email: admin@gmail.com
-password: 123456
+Email: testuser@codewave.com
+password: testuser
 
 Only admins can login or register, add new user into app.
