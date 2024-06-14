@@ -16,7 +16,7 @@ import {
 const router = express.Router();
 
 router.post("/register", registerUser);
-router.post("/log-in", loginUser);
+router.post("/login", loginUser);
 router.post("/logout", logoutUser);
 
 router.get("/get-team", protectRoute, isAdminRoute, getTeamList);
