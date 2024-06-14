@@ -18,10 +18,6 @@ const HOSTNAME = process.env.HOSTNAME;
 
 const app = express();
 
-app.get("/", (req,res) => {
-   res.send("welcome to server")
-})
-
 app.use(cors({
    origin: ["https://client1-t24j.vercel.app/log-in"],
    methods: ["GET", "POST", "PUT", "DELETE"],
