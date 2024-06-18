@@ -15,7 +15,7 @@ const Users = () => {
   const [openAction, setOpenAction] = useState(false);
   const [selected, setSelected] = useState(null);
 
-   const {data, isLoading, refetch} = useGetTeamListQuery()
+   const {data, refetch} = useGetTeamListQuery()
   //  console.log(data, error)
  
   const [deleteUser] = useDeleteUserMutation();
@@ -95,7 +95,7 @@ const Users = () => {
       </td>
 
       <td className='p-2'>{user.title}</td>
-      <td className='p-2'>{user.email || "user.emal.com"}</td>
+      <td className='p-2'>{user.email || "user.email.com"}</td>
       <td className='p-2'>{user.role}</td>
 
       <td>
