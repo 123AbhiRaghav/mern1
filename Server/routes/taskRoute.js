@@ -20,7 +20,7 @@ router.post("/duplicate/:id", protectRoute, isAdminRoute, duplicateTask)
 router.post("/activity/:id", protectRoute, postTaskActivity)
 
 router.get("/dashboard", protectRoute, dashboardStatistics)
-// router.get("/", protectRoute, getTasks)
+router.get("/", protectRoute, getTasks)
 router.get("/:id", protectRoute, getTask)
 
 router.put("/create-subtask/:id", protectRoute, isAdminRoute, createSubTask);
